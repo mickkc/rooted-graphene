@@ -30,3 +30,6 @@ jobs:
     with:
       device-id: ${{ matrix.device-id }}
       magisk-preinit-device: ${{ matrix.magisk-preinit-device }}
+      skip-rootless: true
+      skip-pixincreate: false
+
