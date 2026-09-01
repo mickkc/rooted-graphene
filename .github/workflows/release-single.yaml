@@ -61,6 +61,8 @@ on:
 jobs:
   build-device:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     timeout-minutes: 20 # Make sure to not waste hours when some command does not return 
     steps:
       - name: Checkout rooted-graphene script repository
